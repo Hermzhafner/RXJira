@@ -177,7 +177,6 @@ rxversion="7.2">
 			name="SuccessfulTest">
 			</testcase>
 			<testmodule
-			enabled="False"
 			id="65096b28-f335-4914-aa0d-a4f75961a3ce"
 			name="FailingTestModule"
 			ref="0d9f9a12-9ec2-4b31-8414-d96732116d14"
