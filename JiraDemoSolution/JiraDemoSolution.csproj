@@ -10,9 +10,10 @@
     <RootNamespace>JiraDemoSolution</RootNamespace>
     <AssemblyName>JiraDemoSolution</AssemblyName>
     <RanorexVersion>7.2</RanorexVersion>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <RanorexTargetsPath>$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
     <projectdefaultrepository>e5e18fc3-2933-4a1e-a315-870af2b12eea</projectdefaultrepository>
+    <StartAction>Project</StartAction>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -58,6 +59,9 @@
     <Reference Include="Ranorex.Plugin.Win32" />
     <Reference Include="Ranorex.Plugin.WinForms" />
     <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="Ranorex_JiraIntegration">
+      <HintPath>..\packages\Ranorex_JiraIntegration.7.1.2.1\lib\net452\Ranorex_JiraIntegration.dll</HintPath>
+    </Reference>
     <Reference Include="RestSharp">
       <HintPath>..\packages\RestSharp.105.2.3\lib\net4\RestSharp.dll</HintPath>
     </Reference>
@@ -80,6 +84,18 @@
     <Compile Include="AssemblyInfo.cs">
       <id>2c20059f-c29b-4d09-aac9-ba0f9c68e0a2</id>
     </Compile>
+    <Compile Include="FailingTestModule.cs">
+      <BoundTo>f872f427-b151-411c-9739-37b3163fbf4b</BoundTo>
+      <DependentUpon>FailingTestModule.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>88b9fcaf-eb60-46b4-bbdd-9adc1c736fa7</id>
+    </Compile>
+    <Compile Include="FailingTestModule.UserCode.cs">
+      <BoundTo>f872f427-b151-411c-9739-37b3163fbf4b</BoundTo>
+      <DependentUpon>FailingTestModule.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a71539c3-69a6-4761-9a17-fa85057a0e2e</id>
+    </Compile>
     <Compile Include="JiraDemoSolutionRepository.cs">
       <BoundTo>e5e18fc3-2933-4a1e-a315-870af2b12eea</BoundTo>
       <DependentUpon>JiraDemoSolutionRepository.rxrep</DependentUpon>
@@ -89,15 +105,27 @@
     <Compile Include="Program.cs">
       <id>51645a31-1d06-4610-9dcf-a2842cc0805f</id>
     </Compile>
-    <Compile Include="Recording1.cs">
+    <Compile Include="setValuesInJira.cs">
+      <BoundTo>b759b7fc-f175-437a-9b5c-f8cd317480c2</BoundTo>
+      <DependentUpon>setValuesInJira.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6be05e59-c3a3-4fcf-95f6-d560faf4b5eb</id>
+    </Compile>
+    <Compile Include="setValuesInJira.UserCode.cs">
+      <BoundTo>b759b7fc-f175-437a-9b5c-f8cd317480c2</BoundTo>
+      <DependentUpon>setValuesInJira.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f6965a27-17da-46de-a0df-b29b72518256</id>
+    </Compile>
+    <Compile Include="SuccessfulTestModule.cs">
       <BoundTo>6911514d-2d9f-487a-a0e9-90076ec7b31f</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <DependentUpon>SuccessfulTestModule.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
       <id>d6e4f740-2814-4981-967a-5206fc056507</id>
     </Compile>
-    <Compile Include="Recording1.UserCode.cs">
+    <Compile Include="SuccessfulTestModule.UserCode.cs">
       <BoundTo>6911514d-2d9f-487a-a0e9-90076ec7b31f</BoundTo>
-      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <DependentUpon>SuccessfulTestModule.rxrec</DependentUpon>
       <UserCode>true</UserCode>
       <id>57ef72a4-e028-44f6-bba9-53972c5cce56</id>
     </Compile>
@@ -105,6 +133,11 @@
   <ItemGroup>
     <None Include="app.config">
       <id>58570e95-52e4-4886-972b-bd45736a0db5</id>
+    </None>
+    <None Include="FailingTestModule.rxrec">
+      <BoundTo>e5e18fc3-2933-4a1e-a315-870af2b12eea</BoundTo>
+      <id>f872f427-b151-411c-9739-37b3163fbf4b</id>
+      <recordtableid>0d9f9a12-9ec2-4b31-8414-d96732116d14</recordtableid>
     </None>
     <None Include="JiraDemoSolutionRepository.rximg">
       <BoundTo>e5e18fc3-2933-4a1e-a315-870af2b12eea</BoundTo>
@@ -121,9 +154,14 @@
       <id>ca1c91a1-3459-43e2-ade7-70d3305207c2</id>
     </None>
     <None Include="RanorexJiraCli.exe">
-      <id>4511abd1-a762-4bb1-9a61-61e1107b5100</id>
+      <id>f4b39a70-3fe2-49a8-801b-27d1eef08268</id>
     </None>
-    <None Include="Recording1.rxrec">
+    <None Include="setValuesInJira.rxrec">
+      <BoundTo>e5e18fc3-2933-4a1e-a315-870af2b12eea</BoundTo>
+      <id>b759b7fc-f175-437a-9b5c-f8cd317480c2</id>
+      <recordtableid>3841344d-e430-4bf8-ad78-d9eb4aba3ada</recordtableid>
+    </None>
+    <None Include="SuccessfulTestModule.rxrec">
       <BoundTo>e5e18fc3-2933-4a1e-a315-870af2b12eea</BoundTo>
       <id>6911514d-2d9f-487a-a0e9-90076ec7b31f</id>
       <recordtableid>4b1b5a37-3456-485d-b191-a2c397590ad8</recordtableid>

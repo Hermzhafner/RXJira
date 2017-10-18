@@ -7,11 +7,191 @@ rxversion="7.2">
 			id="216568d3-309c-4f97-a00a-24318b37b4e7"
 			name="JiraDemoSolution"
 			reportlevel="Info;20">
+				<parameters>
+					<param
+					name="JiraProjectKey"
+					value="RXDEM">
+					</param>
+					<param
+					name="JiraIssueType"
+					value="Bug">
+					</param>
+					<param
+					name="JiraSummary"
+					value="">
+					</param>
+					<param
+					name="JiraDescription"
+					value="">
+					</param>
+					<param
+					name="JiraLabels"
+					value="">
+					</param>
+					<param
+					name="StateClosed"
+					value="Done">
+					</param>
+					<param
+					name="StateReopen"
+					value="In Progress">
+					</param>
+					<param
+					name="RxAutomationFieldName"
+					value="Rx Test Case Name">
+					</param>
+					<param
+					name="jqlQueryToConnectIssues"
+					value="">
+					</param>
+					<param
+					name="jiraIssuePriority"
+					value="">
+					</param>
+					<param
+					name="jiraEnvironment"
+					value="">
+					</param>
+					<param
+					name="JiraUserName"
+					value="automationuser">
+					</param>
+					<param
+					name="JiraServerURL"
+					value="http://rxpresales006/jira/">
+					</param>
+					<param
+					name="JiraPassword"
+					value="rxtest">
+					</param>
+				</parameters>
+			</testcase>
+			<testmodule
+			id="2ec5606c-0ad4-4653-b8d4-0e06bd880759"
+			name="InitializeDefaultConfiguration"
+			ref="76ff8843-49b3-4968-9c30-ce917ab28d5e"
+			type="UserCode">
+				<databinding>
+					<var
+					dataname="JiraProjectKey"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="2dc0bbb3-c44a-42b6-a695-9fb1abff8d84"
+					variablename="JiraProjectKey">
+					</var>
+					<var
+					dataname="JiraIssueType"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="d9248964-3f28-4abe-a5a8-324c190cf2f4"
+					variablename="JiraIssueType">
+					</var>
+					<var
+					dataname="JiraSummary"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="e16ac939-1d71-4936-8009-de50e23325ca"
+					variablename="JiraSummary">
+					</var>
+					<var
+					dataname="JiraDescription"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="835f55d5-961e-4f62-aae1-0aa992c725ef"
+					variablename="JiraDescription">
+					</var>
+					<var
+					dataname="JiraLabels"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="ab382eab-9609-430a-b18e-46b19a493a5f"
+					variablename="JiraLabels">
+					</var>
+					<var
+					dataname="StateClosed"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="c4f14a65-db66-4381-babd-921e14077be6"
+					variablename="StateClosed">
+					</var>
+					<var
+					dataname="StateReopen"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="f6201ada-3a5b-4879-b9e1-2d9c839b2736"
+					variablename="StateReopen">
+					</var>
+					<var
+					dataname="RxAutomationFieldName"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="24aac369-38ab-45ec-8a87-c79ec20cfd07"
+					variablename="RxAutomationFieldName">
+					</var>
+					<var
+					dataname="jqlQueryToConnectIssues"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="0FA988AE-AAE9-40C4-9386-F51B13E8C96B7"
+					variablename="jqlQueryToConnectIssues">
+					</var>
+					<var
+					dataname="jiraIssuePriority"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="153c1454-fac1-49b6-bb0e-3126b0c1c0b1"
+					variablename="jiraIssuePriority">
+					</var>
+					<var
+					dataname="jiraEnvironment"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="df32f91e-a96c-40ea-b3e8-2e2154bf1012"
+					variablename="jiraEnvironment">
+					</var>
+					<var
+					dataname="JiraUserName"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="87147480-a368-4c8d-935a-ac9928641b17"
+					variablename="JiraUserName">
+					</var>
+					<var
+					dataname="JiraServerURL"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="2d58eee0-06de-4d7e-9c04-dca5cd7a1a91"
+					variablename="JiraServerURL">
+					</var>
+					<var
+					dataname="JiraPassword"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="d4637164-3891-47a1-a96e-77396f53f387"
+					variablename="JiraPassword">
+					</var>
+				</databinding>
+			</testmodule>
+			<testcase
+			id="32b363ce-0f8d-4b74-a342-e116fb4dba95"
+			name="FailingTest1">
+				<parameters>
+					<param
+					name="JiraCLIFileLocation"
+					value="">
+					</param>
+					<param
+					name="JiraBatchFileFolderLocation"
+					value="">
+					</param>
+				</parameters>
 			</testcase>
 			<testcase
 			id="39e86ebb-c430-49e8-b1db-0f769a774c40"
-			name="TestCase">
+			name="SuccessfulTest">
 			</testcase>
+			<testmodule
+			id="65096b28-f335-4914-aa0d-a4f75961a3ce"
+			name="FailingTestModule"
+			ref="0d9f9a12-9ec2-4b31-8414-d96732116d14"
+			type="Recording">
+			</testmodule>
+			<testmodule
+			id="7585bd07-fe6e-4c79-b612-74de34b7c3c0"
+			name="setValuesInJira"
+			ref="3841344d-e430-4bf8-ad78-d9eb4aba3ada"
+			type="Recording">
+			</testmodule>
+			<setup
+			id="77ea938a-048d-4f36-bb05-a3527c4afa3a"
+			name="setup">
+			</setup>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -26,11 +206,21 @@ rxversion="7.2">
 			reportwriteinterval="30000ms"
 			showinvisiblechars="True">
 			</testsuite>
+			<teardown
+			id="a508a63c-29ce-454a-a952-fb69146f1e1c"
+			name="teardown">
+			</teardown>
 			<testmodule
 			id="b8c8077c-5d34-4c06-be6b-23d183dbb43c"
-			name="Recording1"
+			name="SuccessfulTestModule"
 			ref="4b1b5a37-3456-485d-b191-a2c397590ad8"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="ebc8b858-045a-40ea-8a9b-c1eafe836ab0"
+			name="AutoHandleJiraIntegration"
+			ref="8b73dad1-ce2b-4ff6-8618-571f7b31fc6d"
+			type="UserCode">
 			</testmodule>
 		</flatlistofchildren>
 		<childhierarchy>
@@ -40,13 +230,41 @@ rxversion="7.2">
 				<testcase
 				id="216568d3-309c-4f97-a00a-24318b37b4e7"
 				name="JiraDemoSolution">
+					<setup
+					id="77ea938a-048d-4f36-bb05-a3527c4afa3a"
+					name="setup">
+						<testmodule
+						id="2ec5606c-0ad4-4653-b8d4-0e06bd880759"
+						name="InitializeDefaultConfiguration">
+						</testmodule>
+					</setup>
 					<testcase
 					id="39e86ebb-c430-49e8-b1db-0f769a774c40"
-					name="TestCase">
+					name="SuccessfulTest">
 						<testmodule
 						id="b8c8077c-5d34-4c06-be6b-23d183dbb43c"
-						name="Recording1">
+						name="SuccessfulTestModule">
 						</testmodule>
+					</testcase>
+					<testcase
+					id="32b363ce-0f8d-4b74-a342-e116fb4dba95"
+					name="FailingTest1">
+						<testmodule
+						id="65096b28-f335-4914-aa0d-a4f75961a3ce"
+						name="FailingTestModule">
+						</testmodule>
+						<teardown
+						id="a508a63c-29ce-454a-a952-fb69146f1e1c"
+						name="teardown">
+							<testmodule
+							id="7585bd07-fe6e-4c79-b612-74de34b7c3c0"
+							name="setValuesInJira">
+							</testmodule>
+							<testmodule
+							id="ebc8b858-045a-40ea-8a9b-c1eafe836ab0"
+							name="AutoHandleJiraIntegration">
+							</testmodule>
+						</teardown>
 					</testcase>
 				</testcase>
 			</testsuite>
@@ -62,6 +280,9 @@ rxversion="7.2">
 			id="216568d3-309c-4f97-a00a-24318b37b4e7">
 			</testcontainer>
 			<testcontainer
+			id="32b363ce-0f8d-4b74-a342-e116fb4dba95">
+			</testcontainer>
+			<testcontainer
 			id="39e86ebb-c430-49e8-b1db-0f769a774c40">
 			</testcontainer>
 		</testconfiguration>
@@ -72,6 +293,9 @@ rxversion="7.2">
 		</reference>
 		<reference>
 			Newtonsoft.Json.dll
+		</reference>
+		<reference>
+			Ranorex_JiraIntegration.dll
 		</reference>
 		<reference>
 			RestSharp.dll

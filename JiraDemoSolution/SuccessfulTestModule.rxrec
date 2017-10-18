@@ -5,7 +5,7 @@ id="4b1b5a37-3456-485d-b191-a2c397590ad8"
 mode="Global"
 rxversion="7.2">
 	<name>
-		Recording1
+		SuccessfulTestModule
 	</name>
 	<repeatcount>
 		1
@@ -23,7 +23,7 @@ rxversion="7.2">
 		True
 	</useDefaultItemLogging>
 	<codegen
-	classname="Recording1"
+	classname="SuccessfulTestModule"
 	namespace="JiraDemoSolution">
 	</codegen>
 	<variables>
@@ -82,7 +82,7 @@ rxversion="7.2">
 	</repository>
 	<usercodefile
 	lang="CSharp">
-		Recording1.UserCode.cs
+		SuccessfulTestModule.UserCode.cs
 	</usercodefile>
 	<references>
 	</references>

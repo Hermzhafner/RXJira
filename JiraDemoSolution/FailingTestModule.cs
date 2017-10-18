@@ -24,29 +24,29 @@ namespace JiraDemoSolution
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The FailingTestModule recording.
     /// </summary>
-    [TestModule("4b1b5a37-3456-485d-b191-a2c397590ad8", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    [TestModule("0d9f9a12-9ec2-4b31-8414-d96732116d14", ModuleType.Recording, 1)]
+    public partial class FailingTestModule : ITestModule
     {
         /// <summary>
         /// Holds an instance of the JiraDemoSolutionRepository repository.
         /// </summary>
         public static JiraDemoSolutionRepository repo = JiraDemoSolutionRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static FailingTestModule instance = new FailingTestModule();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public FailingTestModule()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static FailingTestModule Instance
         {
             get { return instance; }
         }
@@ -79,11 +79,11 @@ namespace JiraDemoSolution
 
             Init();
 
-            Report.Log(ReportLevel.Info, "User", "Info Message", new RecordItemIndex(0));
+            Report.Log(ReportLevel.Debug, "User", "Debug Message", new RecordItemIndex(0));
             
-            Report.Log(ReportLevel.Debug, "User", "Debug Message", new RecordItemIndex(1));
+            Report.Log(ReportLevel.Info, "User", "Info Message", new RecordItemIndex(1));
             
-            Report.Log(ReportLevel.Success, "User", "Success Message", new RecordItemIndex(2));
+            Report.Log(ReportLevel.Failure, "User", "Failure Message", new RecordItemIndex(2));
             
         }
 
