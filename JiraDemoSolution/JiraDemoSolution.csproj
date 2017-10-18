@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <Import Project="..\packages\Ranorex_JiraIntegration.7.1.2.1\build\Ranorex_JiraIntegration.props" Condition="Exists('..\packages\Ranorex_JiraIntegration.7.1.2.1\build\Ranorex_JiraIntegration.props')" />
   <PropertyGroup>
     <ProjectGuid>{B280DD92-B98B-46D1-B05D-85F59A23C4DD}</ProjectGuid>
     <TargetFrameworkProfile />
@@ -33,6 +34,12 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Atlassian.Jira">
+      <HintPath>..\packages\Atlassian.SDK.9.2.4\lib\Atlassian.Jira.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Ranorex.Core" />
     <Reference Include="Ranorex.Plugin.Cef" />
     <Reference Include="Ranorex.Plugin.ChromeWeb" />
@@ -51,6 +58,9 @@
     <Reference Include="Ranorex.Plugin.Win32" />
     <Reference Include="Ranorex.Plugin.WinForms" />
     <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net4\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -107,6 +117,12 @@
       <repoid>cedb4933-c413-42b4-b0f4-5bd1a6ab2a87</repoid>
       <reporootid>07da7171-552f-4cfd-b435-69a3811e3e39</reporootid>
     </None>
+    <None Include="packages.config">
+      <id>ca1c91a1-3459-43e2-ade7-70d3305207c2</id>
+    </None>
+    <None Include="RanorexJiraCli.exe">
+      <id>4511abd1-a762-4bb1-9a61-61e1107b5100</id>
+    </None>
     <None Include="Recording1.rxrec">
       <BoundTo>e5e18fc3-2933-4a1e-a315-870af2b12eea</BoundTo>
       <id>6911514d-2d9f-487a-a0e9-90076ec7b31f</id>
@@ -125,4 +141,5 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+  <Import Project="..\packages\Ranorex_JiraIntegration.7.1.2.1\build\Ranorex_JiraIntegration.targets" Condition="Exists('..\packages\Ranorex_JiraIntegration.7.1.2.1\build\Ranorex_JiraIntegration.targets')" />
 </Project>
