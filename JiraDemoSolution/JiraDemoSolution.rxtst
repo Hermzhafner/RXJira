@@ -199,6 +199,7 @@ rxversion="7.2">
 			TracingScreenshotQuality="40"
 			enabletracingscreenshots="True"
 			id="87067993-1d5d-42c1-a354-496aabeab26c"
+			junitreport="True"
 			name="JiraDemoSolution"
 			placescreenshotsinfolder="True"
 			reportcompress="False"
