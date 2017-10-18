@@ -177,6 +177,7 @@ rxversion="7.2">
 			name="SuccessfulTest">
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="65096b28-f335-4914-aa0d-a4f75961a3ce"
 			name="FailingTestModule"
 			ref="0d9f9a12-9ec2-4b31-8414-d96732116d14"
@@ -216,6 +217,12 @@ rxversion="7.2">
 			name="SuccessfulTestModule"
 			ref="4b1b5a37-3456-485d-b191-a2c397590ad8"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="e2d915de-bad1-4d4e-9f91-b3a2731eb917"
+			name="AutoCreateNewIssueIfTestCaseFails"
+			ref="de17f33e-345f-416f-9f58-505b5e34aae3"
+			type="UserCode">
 			</testmodule>
 			<testmodule
 			id="ebc8b858-045a-40ea-8a9b-c1eafe836ab0"
@@ -260,6 +267,10 @@ rxversion="7.2">
 							<testmodule
 							id="7585bd07-fe6e-4c79-b612-74de34b7c3c0"
 							name="setValuesInJira">
+							</testmodule>
+							<testmodule
+							id="e2d915de-bad1-4d4e-9f91-b3a2731eb917"
+							name="AutoCreateNewIssueIfTestCaseFails">
 							</testmodule>
 							<testmodule
 							id="ebc8b858-045a-40ea-8a9b-c1eafe836ab0"
