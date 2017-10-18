@@ -73,76 +73,10 @@ rxversion="7.2">
 			type="UserCode">
 				<databinding>
 					<var
-					dataname="JiraProjectKey"
+					dataname="JiraPassword"
 					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
-					variableid="2dc0bbb3-c44a-42b6-a695-9fb1abff8d84"
-					variablename="JiraProjectKey">
-					</var>
-					<var
-					dataname="JiraIssueType"
-					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
-					variableid="d9248964-3f28-4abe-a5a8-324c190cf2f4"
-					variablename="JiraIssueType">
-					</var>
-					<var
-					dataname="JiraSummary"
-					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
-					variableid="e16ac939-1d71-4936-8009-de50e23325ca"
-					variablename="JiraSummary">
-					</var>
-					<var
-					dataname="JiraDescription"
-					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
-					variableid="835f55d5-961e-4f62-aae1-0aa992c725ef"
-					variablename="JiraDescription">
-					</var>
-					<var
-					dataname="JiraLabels"
-					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
-					variableid="ab382eab-9609-430a-b18e-46b19a493a5f"
-					variablename="JiraLabels">
-					</var>
-					<var
-					dataname="StateClosed"
-					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
-					variableid="c4f14a65-db66-4381-babd-921e14077be6"
-					variablename="StateClosed">
-					</var>
-					<var
-					dataname="StateReopen"
-					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
-					variableid="f6201ada-3a5b-4879-b9e1-2d9c839b2736"
-					variablename="StateReopen">
-					</var>
-					<var
-					dataname="RxAutomationFieldName"
-					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
-					variableid="24aac369-38ab-45ec-8a87-c79ec20cfd07"
-					variablename="RxAutomationFieldName">
-					</var>
-					<var
-					dataname="jqlQueryToConnectIssues"
-					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
-					variableid="0FA988AE-AAE9-40C4-9386-F51B13E8C96B7"
-					variablename="jqlQueryToConnectIssues">
-					</var>
-					<var
-					dataname="jiraIssuePriority"
-					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
-					variableid="153c1454-fac1-49b6-bb0e-3126b0c1c0b1"
-					variablename="jiraIssuePriority">
-					</var>
-					<var
-					dataname="jiraEnvironment"
-					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
-					variableid="df32f91e-a96c-40ea-b3e8-2e2154bf1012"
-					variablename="jiraEnvironment">
-					</var>
-					<var
-					dataname="JiraUserName"
-					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
-					variableid="87147480-a368-4c8d-935a-ac9928641b17"
-					variablename="JiraUserName">
+					variableid="d4637164-3891-47a1-a96e-77396f53f387"
+					variablename="JiraPassword">
 					</var>
 					<var
 					dataname="JiraServerURL"
@@ -151,10 +85,76 @@ rxversion="7.2">
 					variablename="JiraServerURL">
 					</var>
 					<var
-					dataname="JiraPassword"
+					dataname="JiraUserName"
 					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
-					variableid="d4637164-3891-47a1-a96e-77396f53f387"
-					variablename="JiraPassword">
+					variableid="87147480-a368-4c8d-935a-ac9928641b17"
+					variablename="JiraUserName">
+					</var>
+					<var
+					dataname="jiraEnvironment"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="df32f91e-a96c-40ea-b3e8-2e2154bf1012"
+					variablename="jiraEnvironment">
+					</var>
+					<var
+					dataname="jiraIssuePriority"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="153c1454-fac1-49b6-bb0e-3126b0c1c0b1"
+					variablename="jiraIssuePriority">
+					</var>
+					<var
+					dataname="jqlQueryToConnectIssues"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="0FA988AE-AAE9-40C4-9386-F51B13E8C96B7"
+					variablename="jqlQueryToConnectIssues">
+					</var>
+					<var
+					dataname="RxAutomationFieldName"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="24aac369-38ab-45ec-8a87-c79ec20cfd07"
+					variablename="RxAutomationFieldName">
+					</var>
+					<var
+					dataname="StateReopen"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="f6201ada-3a5b-4879-b9e1-2d9c839b2736"
+					variablename="StateReopen">
+					</var>
+					<var
+					dataname="StateClosed"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="c4f14a65-db66-4381-babd-921e14077be6"
+					variablename="StateClosed">
+					</var>
+					<var
+					dataname="JiraLabels"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="ab382eab-9609-430a-b18e-46b19a493a5f"
+					variablename="JiraLabels">
+					</var>
+					<var
+					dataname="JiraDescription"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="835f55d5-961e-4f62-aae1-0aa992c725ef"
+					variablename="JiraDescription">
+					</var>
+					<var
+					dataname="JiraSummary"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="e16ac939-1d71-4936-8009-de50e23325ca"
+					variablename="JiraSummary">
+					</var>
+					<var
+					dataname="JiraIssueType"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="d9248964-3f28-4abe-a5a8-324c190cf2f4"
+					variablename="JiraIssueType">
+					</var>
+					<var
+					dataname="JiraProjectKey"
+					datasourceid="216568d3-309c-4f97-a00a-24318b37b4e7"
+					variableid="2dc0bbb3-c44a-42b6-a695-9fb1abff8d84"
+					variablename="JiraProjectKey">
 					</var>
 				</databinding>
 			</testmodule>
