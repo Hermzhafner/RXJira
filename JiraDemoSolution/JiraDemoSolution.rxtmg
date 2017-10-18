@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="7.2">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="JiraDemoSolution"
+      id="b46c8fb0-f0c1-4264-bd13-be8ccf65061b"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="JiraDemoSolution"
+      id="b46c8fb0-f0c1-4264-bd13-be8ccf65061b"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>
