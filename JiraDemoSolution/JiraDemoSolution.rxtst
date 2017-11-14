@@ -67,6 +67,7 @@ rxversion="7.2">
 				</parameters>
 			</testcase>
 			<testmodule
+			enabled="False"
 			id="2ec5606c-0ad4-4653-b8d4-0e06bd880759"
 			name="InitializeDefaultConfiguration"
 			ref="76ff8843-49b3-4968-9c30-ce917ab28d5e"
@@ -308,12 +309,6 @@ rxversion="7.2">
 		name="TestRun">
 			<testcontainer
 			id="216568d3-309c-4f97-a00a-24318b37b4e7">
-			</testcontainer>
-			<testcontainer
-			id="32b363ce-0f8d-4b74-a342-e116fb4dba95">
-			</testcontainer>
-			<testcontainer
-			id="39e86ebb-c430-49e8-b1db-0f769a774c40">
 			</testcontainer>
 			<testcontainer
 			id="b3703882-fb45-4924-b835-a0a97b0dd8d8">

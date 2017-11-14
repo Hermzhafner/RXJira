@@ -83,19 +83,10 @@ namespace JiraDemoSolution
             Host.Current.OpenBrowser("www.google.com", "IE", "", false, false, false, false, false);
             Delay.Milliseconds(0);
             
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Google.LstIb' at 10;15.", repo.Google.LstIbInfo, new RecordItemIndex(1));
-            repo.Google.LstIb.Click("10;15");
-            Delay.Milliseconds(200);
+            Report.Log(ReportLevel.Info, "Delay", "Waiting for 5s.", new RecordItemIndex(1));
+            Delay.Duration(5000, false);
             
-            Report.Log(ReportLevel.Info, "Keyboard", "Key sequence 'hello' with focus on 'Google.LstIb'.", repo.Google.LstIbInfo, new RecordItemIndex(2));
-            repo.Google.LstIb.PressKeys("hello");
-            Delay.Milliseconds(0);
-            
-            Report.Log(ReportLevel.Info, "Mouse", "Mouse Left Click item 'Google.Button' at 69;22.", repo.Google.ButtonInfo, new RecordItemIndex(3));
-            repo.Google.Button.Click("69;22");
-            Delay.Milliseconds(200);
-            
-            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'Google'.", repo.Google.SelfInfo, new RecordItemIndex(4));
+            Report.Log(ReportLevel.Info, "Application", "Closing application containing item 'Google'.", repo.Google.SelfInfo, new RecordItemIndex(2));
             Host.Current.CloseApplication(repo.Google.Self, new Duration(0));
             Delay.Milliseconds(0);
             
