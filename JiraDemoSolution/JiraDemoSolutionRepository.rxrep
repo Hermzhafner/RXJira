@@ -1,19 +1,69 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="JiraDemoSolutionRepository"
+﻿<repository
 id="cedb4933-c413-42b4-b0f4-5bd1a6ab2a87"
+name="JiraDemoSolutionRepository"
 rxversion="7.2">
-  <codegen
-  classname="JiraDemoSolutionRepository"
-  namespace="JiraDemoSolution"/>
-  <rootfolder
-  name="Root"
-  id="07da7171-552f-4cfd-b435-69a3811e3e39"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-    <basepath/>
-  </rootfolder>
-  <variables/>
+	<codegen
+	classname="JiraDemoSolutionRepository"
+	namespace="JiraDemoSolution">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="07da7171-552f-4cfd-b435-69a3811e3e39"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="ec84a993-a936-4092-9685-d379cdbff1e9"
+		isrooted="True"
+		name="Google"
+		refpath="/dom[@domain='www.google.at']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="dbbc7359-ddb8-4d8f-9c69-bcc606078b77"
+			name="LstIb"
+			refimgid="e7f8ddd0-571b-4752-a20a-ff9c4c977930"
+			refpath="/dom[@domain='www.google.at']//input[#'lst-ib']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.google.at']//input[#'lst-ib']
+			</item>
+			<item
+			addcaps="unknown,webelement,inputtag"
+			capname="inputtag"
+			id="be5a7404-da9c-447b-a5ef-7d8a3f4b8290"
+			name="Button"
+			refimgid="f193de57-5d77-45ba-a6d5-da90dd7bc9cf"
+			refpath="/dom[@domain='www.google.at']//div[#'sbtc']/div[2]/div[2]/div[1]/div/ul/li[11]/div/span[1]/span/input[@type='button']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.google.at']//div[#'sbtc']//input[@type='button']
+			</item>
+			<basepath>
+				/dom[@domain='www.google.at']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
 </repository>

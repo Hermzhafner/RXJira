@@ -27,6 +27,7 @@ namespace JiraDemoSolution
     public partial class JiraDemoSolutionRepository : RepoGenBaseFolder
     {
         static JiraDemoSolutionRepository instance = new JiraDemoSolutionRepository();
+        JiraDemoSolutionRepositoryFolders.GoogleAppFolder _google;
 
         /// <summary>
         /// Gets the singleton class instance representing the JiraDemoSolutionRepository element repository.
@@ -43,6 +44,7 @@ namespace JiraDemoSolution
         public JiraDemoSolutionRepository() 
             : base("JiraDemoSolutionRepository", "/", null, 0, false, "07da7171-552f-4cfd-b435-69a3811e3e39", ".\\RepositoryImages\\JiraDemoSolutionRepository07da7171.rximgres")
         {
+            _google = new JiraDemoSolutionRepositoryFolders.GoogleAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace JiraDemoSolution
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The Google folder.
+        /// </summary>
+        [RepositoryFolder("ec84a993-a936-4092-9685-d379cdbff1e9")]
+        public virtual JiraDemoSolutionRepositoryFolders.GoogleAppFolder Google
+        {
+            get { return _google; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,98 @@ namespace JiraDemoSolution
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", "7.2")]
     public partial class JiraDemoSolutionRepositoryFolders
     {
+        /// <summary>
+        /// The GoogleAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("ec84a993-a936-4092-9685-d379cdbff1e9")]
+        public partial class GoogleAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _lstibInfo;
+            RepoItemInfo _buttonInfo;
+
+            /// <summary>
+            /// Creates a new Google  folder.
+            /// </summary>
+            public GoogleAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("Google", "/dom[@domain='www.google.at']", parentFolder, 30000, null, false, "ec84a993-a936-4092-9685-d379cdbff1e9", "")
+            {
+                _lstibInfo = new RepoItemInfo(this, "LstIb", ".//input[#'lst-ib']", 30000, null, "dbbc7359-ddb8-4d8f-9c69-bcc606078b77");
+                _buttonInfo = new RepoItemInfo(this, "Button", ".//div[#'sbtc']//input[@type='button']", 30000, null, "be5a7404-da9c-447b-a5ef-7d8a3f4b8290");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("ec84a993-a936-4092-9685-d379cdbff1e9")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("ec84a993-a936-4092-9685-d379cdbff1e9")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The LstIb item.
+            /// </summary>
+            [RepositoryItem("dbbc7359-ddb8-4d8f-9c69-bcc606078b77")]
+            public virtual Ranorex.InputTag LstIb
+            {
+                get
+                {
+                    return _lstibInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The LstIb item info.
+            /// </summary>
+            [RepositoryItemInfo("dbbc7359-ddb8-4d8f-9c69-bcc606078b77")]
+            public virtual RepoItemInfo LstIbInfo
+            {
+                get
+                {
+                    return _lstibInfo;
+                }
+            }
+
+            /// <summary>
+            /// The Button item.
+            /// </summary>
+            [RepositoryItem("be5a7404-da9c-447b-a5ef-7d8a3f4b8290")]
+            public virtual Ranorex.InputTag Button
+            {
+                get
+                {
+                    return _buttonInfo.CreateAdapter<Ranorex.InputTag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Button item info.
+            /// </summary>
+            [RepositoryItemInfo("be5a7404-da9c-447b-a5ef-7d8a3f4b8290")]
+            public virtual RepoItemInfo ButtonInfo
+            {
+                get
+                {
+                    return _buttonInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }

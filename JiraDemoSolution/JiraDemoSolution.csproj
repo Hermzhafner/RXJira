@@ -102,6 +102,18 @@
       <RepositoryCode>true</RepositoryCode>
       <id>235b94f0-9eb1-41ce-bf5f-f2dcc5425e05</id>
     </Compile>
+    <Compile Include="openBrowser.cs">
+      <BoundTo>d95519b0-9f4e-411f-bc4a-c8e57ad0127e</BoundTo>
+      <DependentUpon>openBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fadf34c3-5730-4e64-ae15-3fe1617edba4</id>
+    </Compile>
+    <Compile Include="openBrowser.UserCode.cs">
+      <BoundTo>d95519b0-9f4e-411f-bc4a-c8e57ad0127e</BoundTo>
+      <DependentUpon>openBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0074b151-dedc-4868-808d-8693fc5a0329</id>
+    </Compile>
     <Compile Include="Program.cs">
       <id>51645a31-1d06-4610-9dcf-a2842cc0805f</id>
     </Compile>
@@ -149,6 +161,11 @@
       <id>e5e18fc3-2933-4a1e-a315-870af2b12eea</id>
       <repoid>cedb4933-c413-42b4-b0f4-5bd1a6ab2a87</repoid>
       <reporootid>07da7171-552f-4cfd-b435-69a3811e3e39</reporootid>
+    </None>
+    <None Include="openBrowser.rxrec">
+      <BoundTo>e5e18fc3-2933-4a1e-a315-870af2b12eea</BoundTo>
+      <id>d95519b0-9f4e-411f-bc4a-c8e57ad0127e</id>
+      <recordtableid>d4d98e40-180a-4427-8b68-135dbf6fdf3d</recordtableid>
     </None>
     <None Include="packages.config">
       <id>ca1c91a1-3459-43e2-ade7-70d3305207c2</id>
