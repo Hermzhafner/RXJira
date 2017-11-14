@@ -177,6 +177,12 @@ rxversion="7.2">
 			name="SuccessfulTest">
 			</testcase>
 			<testmodule
+			id="3bc6f3db-1ad3-4922-b400-851fc19fcfde"
+			name="openBrowser"
+			ref="d4d98e40-180a-4427-8b68-135dbf6fdf3d"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			enabled="False"
 			id="65096b28-f335-4914-aa0d-a4f75961a3ce"
 			name="FailingTestModule"
@@ -212,6 +218,10 @@ rxversion="7.2">
 			id="a508a63c-29ce-454a-a952-fb69146f1e1c"
 			name="teardown">
 			</teardown>
+			<testcase
+			id="b3703882-fb45-4924-b835-a0a97b0dd8d8"
+			name="browsing">
+			</testcase>
 			<testmodule
 			id="b8c8077c-5d34-4c06-be6b-23d183dbb43c"
 			name="SuccessfulTestModule"
@@ -278,6 +288,14 @@ rxversion="7.2">
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="b3703882-fb45-4924-b835-a0a97b0dd8d8"
+					name="browsing">
+						<testmodule
+						id="3bc6f3db-1ad3-4922-b400-851fc19fcfde"
+						name="openBrowser">
+						</testmodule>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -296,6 +314,9 @@ rxversion="7.2">
 			</testcontainer>
 			<testcontainer
 			id="39e86ebb-c430-49e8-b1db-0f769a774c40">
+			</testcontainer>
+			<testcontainer
+			id="b3703882-fb45-4924-b835-a0a97b0dd8d8">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>
