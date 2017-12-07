@@ -184,13 +184,13 @@ rxversion="7.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
-			enabled="False"
 			id="65096b28-f335-4914-aa0d-a4f75961a3ce"
 			name="FailingTestModule"
 			ref="0d9f9a12-9ec2-4b31-8414-d96732116d14"
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="7585bd07-fe6e-4c79-b612-74de34b7c3c0"
 			name="setValuesInJira"
 			ref="3841344d-e430-4bf8-ad78-d9eb4aba3ada"
@@ -230,12 +230,14 @@ rxversion="7.2">
 			type="Recording">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="e2d915de-bad1-4d4e-9f91-b3a2731eb917"
 			name="AutoCreateNewIssueIfTestCaseFails"
 			ref="de17f33e-345f-416f-9f58-505b5e34aae3"
 			type="UserCode">
 			</testmodule>
 			<testmodule
+			enabled="False"
 			id="ebc8b858-045a-40ea-8a9b-c1eafe836ab0"
 			name="AutoHandleJiraIntegration"
 			ref="8b73dad1-ce2b-4ff6-8618-571f7b31fc6d"
@@ -304,14 +306,35 @@ rxversion="7.2">
 	<datasources>
 	</datasources>
 	<testconfigurations
-	default="TestRun">
+	default="default">
 		<testconfiguration
-		name="TestRun">
+		name="default">
 			<testcontainer
 			id="216568d3-309c-4f97-a00a-24318b37b4e7">
 			</testcontainer>
 			<testcontainer
+			id="39e86ebb-c430-49e8-b1db-0f769a774c40">
+			</testcontainer>
+			<testcontainer
 			id="b3703882-fb45-4924-b835-a0a97b0dd8d8">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
+		name="Fail">
+			<testcontainer
+			id="216568d3-309c-4f97-a00a-24318b37b4e7">
+			</testcontainer>
+			<testcontainer
+			id="32b363ce-0f8d-4b74-a342-e116fb4dba95">
+			</testcontainer>
+		</testconfiguration>
+		<testconfiguration
+		name="Success">
+			<testcontainer
+			id="216568d3-309c-4f97-a00a-24318b37b4e7">
+			</testcontainer>
+			<testcontainer
+			id="39e86ebb-c430-49e8-b1db-0f769a774c40">
 			</testcontainer>
 		</testconfiguration>
 	</testconfigurations>

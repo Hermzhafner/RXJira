@@ -1,0 +1,22 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="JiraDemoSolution.rxtst" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="JiraDemoSolution.rxtst" />
+    <Element value="setValuesInJira.rxrec" />
+    <Element value="SuccessfulTestModule.rxrec" />
+    <Element value="openBrowser.rxrec" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections">
+      <Element value="JiraReporter.ValueExtractorHelper.updateDescriptionWithAllStepsMade()" />
+      <Element value="JiraReporter.JiraFieldHelper.addCustomCascadingField(String fieldName, String parentValue, String childValue)" />
+      <Element value="JiraReporter.JiraFieldHelper.addCustomFieldValue(String fieldName, String fieldValue)" />
+    </Array>
+  </Properties>
+</Properties>
